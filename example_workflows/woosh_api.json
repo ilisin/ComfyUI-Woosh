@@ -1,0 +1,41 @@
+{
+  "1": {
+    "class_type": "WooshLocalGenerate",
+    "inputs": {
+      "prompt": "Steady rain falling on leaves in a quiet forest, distant thunder, natural ambience, no speech, no music.",
+      "model": "Woosh-DFlow",
+      "duration_seconds": 5.0,
+      "seed": 0,
+      "batch_size": 1,
+      "cfg": 4.5,
+      "dflow_steps": 4,
+      "crossfade_seconds": 0.25,
+      "device": "auto",
+      "normalize": true,
+      "release_comfy_models": true,
+      "timeout_seconds": 1800
+    }
+  },
+  "2": {
+    "class_type": "PreviewAudio",
+    "inputs": {
+      "audio": [
+        "1",
+        0
+      ]
+    }
+  },
+  "3": {
+    "class_type": "SaveAudioAdvanced",
+    "inputs": {
+      "audio": [
+        "1",
+        0
+      ],
+      "filename_prefix": "audio/Woosh",
+      "format": {
+        "format": "flac"
+      }
+    }
+  }
+}

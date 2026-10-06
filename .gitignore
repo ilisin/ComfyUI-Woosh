@@ -1,0 +1,34 @@
+# Local backend and machine-specific settings
+/runtime/
+/runtime.json
+.venv/
+venv/
+.env
+.env.*
+
+# Python and editor caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+.DS_Store
+Thumbs.db
+
+# Downloaded checkpoints, generated audio, and temporary files
+/models/
+/checkpoints/
+/output/
+*.safetensors
+*.pt
+*.pth
+*.bin
+*.npz
+*.wav
+*.flac
+*.mp3
+*.ogg
+*.zip
+*.part
+*.tmp
+*.log
