@@ -11,7 +11,7 @@ RELEASE = "https://api.github.com/repos/SonyResearch/Woosh/releases/tags/v1.0.0"
 
 
 def fetch_models(model, destination):
-    request = urllib.request.Request(RELEASE, headers={"User-Agent": "ComfyUI-Woosh-Local-installer"})
+    request = urllib.request.Request(RELEASE, headers={"User-Agent": "ComfyUI-Woosh-installer"})
     with urllib.request.urlopen(request, timeout=60) as response:
         release = json.load(response)
     assets = {asset["name"]: asset for asset in release["assets"]}

@@ -1,4 +1,4 @@
-# ComfyUI Woosh Local
+# ComfyUI-Woosh
 
 在 ComfyUI 中使用 Sony AI [Woosh](https://github.com/SonyResearch/Woosh) 生成文本音效和环境声。支持 **Woosh-DFlow** 和 **Woosh-Flow**，输出标准 `AUDIO`，可连接原生音频预览、保存和视频合成节点。
 
@@ -16,7 +16,7 @@
 
 ### 1. 安装扩展
 
-将本仓库下载或克隆到 `ComfyUI/custom_nodes/ComfyUI-Woosh-Local`。插件目录下应直接包含 `__init__.py`、`nodes.py` 和 `setup.ps1`，避免 ZIP 解压后多套一层文件夹。
+将本仓库下载或克隆到 `ComfyUI/custom_nodes/ComfyUI-Woosh`。插件目录下应直接包含 `__init__.py`、`nodes.py` 和 `setup.ps1`，避免 ZIP 解压后多套一层文件夹。
 
 准备 Git 和终端中可运行的 Python。节点本身使用 ComfyUI 已有的 torch/numpy；安装脚本会为 Woosh 创建独立环境。官方 Woosh 固定 torch/torchaudio 2.8.0，因此建议使用这个独立环境。
 
